@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bad Landing Club - The Worst Landing Page Ever</title>
+    <meta name="description" content="The worst landing page on the internet. Nothing useful here. Click at your own risk!">
+    <style>
+        body {
+            font-family: "Comic Sans MS", sans-serif;
+            background-color: hotpink;
+            color: white;
+            text-align: center;
+            margin-top: 100px;
+        }
+        h1 {
+            font-size: 50px;
+            color: yellow;
+            text-shadow: 2px 2px red;
+        }
+        .btn {
+            background-color: cyan;
+            color: black;
+            font-size: 25px;
+            padding: 15px 30px;
+            border: 3px solid black;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .hidden-text {
+            display: none;
+            font-size: 30px;
+            margin-top: 20px;
+            color: lime;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>👎 Welcome to the WORST Landing Page Ever! 👎</h1>
+    <button class="btn" onclick="showText()">Click for a Surprise</button>
+    <p id="secret" class="hidden-text">Oops! No surprise! You fell for it. 🤡</p>
+
+    <script>
+        function showText() {
+            document.getElementById("secret").style.display = "block";
+            setTimeout(() => alert("Why did you even click? There's nothing here!"), 1000);
+        }
+    </script>
+
+</body>
+</html>
